@@ -5,13 +5,30 @@ body {
     background-color: #EFCFAA;
 }
 
-a {
+h1, a {
     font-family: 'Lato', sans-serif;
     text-decoration: none;
     font-size: 21px;
     color: #312320;
 }
 
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5%;
+}
+
+button {
+    background: rgba(0,0,0,0);
+    color: #312320;
+    border: 0px solid;
+    font-size: 32px;
+}
+
+button:hover {
+    color: #A26410;
+}
 
 /* --- Navigation */
 
@@ -35,12 +52,27 @@ nav a:hover {
 main {
     width: 100%;
     display: block;
+    text-align: center;
 }
 
 .carousel {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.carousel span {
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    font-size: 21px;
+    line-height: 32px;
+    margin-bottom: 1%;
+}
+
+#app-img {
+    max-width: 400px;
+    border: 2px solid #312320;
 }
 
 .icon-inner {

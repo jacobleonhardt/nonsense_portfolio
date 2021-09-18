@@ -10,7 +10,9 @@ let apps = [
 ];
 
 let appName = document.getElementById('app-name');
+let appImg = document.getElementById('app-img');
 appName.innerText = apps[0];
+appImg.setAttribute('src', 'https://cdn.pixabay.com/photo/2020/10/11/22/29/books-5647210_1280.jpg')
 
 const rotateRight = () => {
     apps.push(apps.shift())
