@@ -9,6 +9,7 @@ h1, a {
     font-family: 'Lato', sans-serif;
     text-decoration: none;
     font-size: 21px;
+    line-height: 28px;
     color: #312320;
 }
 
@@ -38,6 +39,7 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     text-align: center;
+    min-height: 50px;
 }
 
 nav a:hover {
