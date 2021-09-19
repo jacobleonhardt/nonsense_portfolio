@@ -17,7 +17,7 @@ appImg.setAttribute('src', 'https://cdn.pixabay.com/photo/2020/10/11/22/29/books
 const rotateRight = () => {
     apps.push(apps.shift())
 
-    apps[0] === 'junk drawer' ? document.body.style.backgroundColor = "#AD9672" :
+    apps[0] === 'junk drawer' ? document.body.style.backgroundColor = "#BF9B7A" :
         document.body.style.backgroundColor = "#EFCFAA";
 
     return appName.innerText = apps[0];
