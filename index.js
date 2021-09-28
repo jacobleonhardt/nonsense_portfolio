@@ -6,6 +6,7 @@ let apps = [
     'shop',
     'note',
     'game',
+    'art',
     'junk drawer'
 ];
 
