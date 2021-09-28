@@ -47,6 +47,7 @@ const game = () => {
         body.shift()
     }
 
+    // picking up book
     if(ax === px && ay === py) {
         // if book and wyrm occupy same space, add a new book somewhere
         segments++
@@ -54,6 +55,8 @@ const game = () => {
         ay = Math.floor(Math.random() * ts)
     }
 
+    context.fillStyle = "#624a2e"
+    context.fillRect(ax * gs, ay * gs, gs - 2, gs - 2)
 
 
 }
@@ -63,15 +66,23 @@ const keyDown = (e) => {
     console.log(e.keyCode)
     switch(e.keyCode) {
         case(65):
+            xVal = -1
+            yVal = 0
             console.log('left')
             break
         case(87):
+            yVal = -1
+            xVal = 0
             console.log('up')
             break
         case(68):
+            xVal = 1
+            yVal = 0
             console.log('right')
             break
         case(83):
+            yVal = 1
+            xVal = 0
             console.log('down')
             break
         case(32):
